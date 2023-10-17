@@ -6,7 +6,10 @@ using UnityEngine.SceneManagement;
 
 public class GameHandler : MonoBehaviour{
 
-        public static int playerStat1;
+        public static bool hasGumball = false;
+		public static bool hasBeenToSquish = false;
+		public static bool hasBeenToRobot = false;
+		
         // public GameObject textGameObject;
 
         // void Start () { UpdateScore (); }
