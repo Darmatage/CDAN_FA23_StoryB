@@ -11,7 +11,7 @@ public class Scene_3b : MonoBehaviour {
         public Text Char1speech;
         public Text Char2name;
         public Text Char2speech;
-       //public Text Char3name;
+       public Text Char3name;
        public Text Char3speech;
         public GameObject DialogueDisplay;
         public GameObject ArtChar1a;
@@ -137,6 +137,13 @@ public void Next(){
                 Char1speech.text = "";
                 Char2name.text = "Captain";
                 Char2speech.text = "CADET, YOUR GOAL WAS TO-";
+        }
+		 else if (primeInt == 22){
+			 ArtChar2c.SetActive(false);
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "Smeg ends the video call.";
                 nextButton.SetActive(false);
                 allowSpace = false;
                 NextScene1Button.SetActive(true);
@@ -154,10 +161,17 @@ public void Next(){
                 Char1speech.text = "";
                 Char2name.text = "Captain";
                 Char2speech.text = "IT BETTER BE OR IT’LL BE YOU WE FEED TO THE ENEMY!";
+        }
+		else if (primeInt == 32){
+			 ArtChar2c.SetActive(false);
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "Captain ends the video call.";
                 nextButton.SetActive(false);
                 allowSpace = false;
                 NextScene2Button.SetActive(true);
-        }
+		}
 
       //Please do NOT delete this final bracket that ends the Next() function:
      }
