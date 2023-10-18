@@ -173,7 +173,7 @@ public void Next(){
         }
 
         public void SceneChange1(){
-               SceneManager.LoadScene("Scene2a");
+               SceneManager.LoadScene("Scene_r3");
         }
         public void SceneChange2(){
                 SceneManager.LoadScene("Scene_1");
