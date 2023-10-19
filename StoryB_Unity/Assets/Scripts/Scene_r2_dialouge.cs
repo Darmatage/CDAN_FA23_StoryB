@@ -124,9 +124,13 @@ public void Next(){
                 nextButton.SetActive(false);
                 allowSpace = false;
                 Choice1a.SetActive(true); // function Choice1aFunct()
-                NextScene1Button.SetActive(true);
+	   		 
+			   if(GameHandler.hasgumball == true) {
+				   NextScene1Button.SetActive(true);  
+			   }
+	   }
 
-        }
+        
 
        // after choice 1a
        else if (primeInt == 20){
@@ -139,21 +143,7 @@ public void Next(){
                 NextScene2Button.SetActive(true);
         }
 
-       // after choice 1b
-       else if (primeInt == 30){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Jeda";
-                Char2speech.text = "Do not think you can fool me, human. Where will we find him?";
-        }
-       else if (primeInt == 31){
-                Char1name.text = "YOU";
-                Char1speech.text = "Ragu hangs out in a rough part of town. I'll take you now.";
-                Char2name.text = "";
-                Char2speech.text = "";
-                nextButton.SetActive(false);
-                allowSpace = false;
-        }
+       
 
       //Please do NOT delete this final bracket that ends the Next() function:
      }
