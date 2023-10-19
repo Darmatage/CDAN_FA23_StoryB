@@ -70,7 +70,7 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "???";
-                Char2speech.text = "HELLO TRAVELER!";
+				StartCoroutine(TypeText(Char2speech, "HELLO TRAVELER!"));
                 //gameHandler.AddPlayerStat(1);
         }
        else if (primeInt == 4){
@@ -85,7 +85,7 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "J3FF";
-                Char2speech.text = " I AM ROBOT J3FF, BUT YOU CAN CALL ME J3FF.";
+				StartCoroutine(TypeText(Char2speech, "I AM ROBOT J3FF, BUT YOU CAN CALL ME J3FF."));
         }
        else if (primeInt == 6){
                 ArtChar1b.SetActive(true);
@@ -96,10 +96,10 @@ public void Next(){
                 Char2speech.text = "";
         }
        else if (primeInt ==7){
-                Char1name.text = "J3FF";
-                Char1speech.text = "LIFE? THERE IS NO LIFE ON THIS PLANET, ONLY ROBOTS.";
-                Char2name.text = "";
-                Char2speech.text = "";
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "J3FF";
+				StartCoroutine(TypeText(Char2speech, "LIFE? THERE IS NO LIFE ON THIS PLANET, ONLY ROBOTS."));
 		}
        else if (primeInt == 8){
                 ArtChar1b.SetActive(false);
@@ -110,10 +110,10 @@ public void Next(){
                 Char2speech.text = "No life? That would make it very difficult to live here then. Do you have a captain I can talk to?";
 		}
        else if (primeInt ==9){
-                Char1name.text = "J3FF";
-                Char1speech.text = "YES. I CAN TAKE YOU TO ROBOT 1. BUT ONLY IF YOU HAVE A WORTHY GIFT.";
-                Char2name.text = "";
-                Char2speech.text = "";
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "J3FF";
+                StartCoroutine(TypeText(Char2speech, "YES. I CAN TAKE YOU TO ROBOT 1. BUT ONLY IF YOU HAVE A WORTHY GIFT."));
 		}
        else if (primeInt ==10){
                 Char1name.text = "Cadet Smeg";
@@ -133,7 +133,7 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "J3FF";
-                Char2speech.text = "GOODBYE TRAVELER.";
+				StartCoroutine(TypeText(Char2speech, "GOODBYE TRAVELER."));
                 nextButton.SetActive(false);
                 allowSpace = false;
                 NextScene2Button.SetActive(true);
@@ -177,5 +177,17 @@ public void Next(){
         }
         public void SceneChange2(){
                 SceneManager.LoadScene("Scene_1");
+        }
+		        IEnumerator TypeText(Text target, string fullText){
+                float delay = 0.01f;
+                nextButton.SetActive(false);
+                allowSpace = false;
+                for (int i = 0; i < fullText.Length; i++){
+                        string currentText = fullText.Substring(0,i);
+                        target.text = currentText;
+                        yield return new WaitForSeconds(delay);
+                }
+                nextButton.SetActive(true);
+                allowSpace = true;
         }
 }

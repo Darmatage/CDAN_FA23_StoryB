@@ -61,10 +61,10 @@ public void Next(){
         }
         else if (primeInt == 2){
                 DialogueDisplay.SetActive(true);
-                Char1name.text = "J3FF";
-                Char1speech.text = "HERE IS THE PERFECT ROBOT 1.";
-                Char2name.text = "";
-                Char2speech.text = "";
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "J3FF";
+                StartCoroutine(TypeText(Char2speech, "HERE IS THE PERFECT ROBOT 1."));
         }
        else if (primeInt ==3){
                 Char1name.text = "Cadet Smeg";
@@ -85,7 +85,7 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "ROBOT 1";
-                Char2speech.text = "WHY RUN? YOU CAN TAKE BACK YOUR PLANET WITH OUR HELP.";
+				StartCoroutine(TypeText(Char2speech, "WHY RUN? YOU CAN TAKE BACK YOUR PLANET WITH OUR HELP."));
         }
        else if (primeInt == 6){
                 Char1name.text = "Cadet Smeg";
@@ -97,7 +97,7 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "ROBOT 1";
-                Char2speech.text = "THAT IS NOT POSSIBLE. WITH OUR TECHNOLOGY WE CAN MAKE YOUR ARMY UNSTOPPABLE.";
+				StartCoroutine(TypeText(Char2speech, "THAT IS NOT POSSIBLE. WITH OUR TECHNOLOGY WE CAN MAKE YOUR ARMY UNSTOPPABLE."));
                 // Turn off "Next" button, turn on "Choice" buttons
                 nextButton.SetActive(false);
                 allowSpace = false;
@@ -156,5 +156,17 @@ public void Next(){
         }
         public void SceneChange2(){
                 SceneManager.LoadScene("Scene_1");
+        }
+				        IEnumerator TypeText(Text target, string fullText){
+                float delay = 0.01f;
+                nextButton.SetActive(false);
+                allowSpace = false;
+                for (int i = 0; i < fullText.Length; i++){
+                        string currentText = fullText.Substring(0,i);
+                        target.text = currentText;
+                        yield return new WaitForSeconds(delay);
+                }
+                nextButton.SetActive(true);
+                allowSpace = true;
         }
 }
