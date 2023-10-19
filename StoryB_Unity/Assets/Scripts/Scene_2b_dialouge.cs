@@ -351,7 +351,7 @@ public void Next(){
 		
 		
         public void SceneChange1(){
-               SceneManager.LoadScene("Scene_1"); // return to ship
+               SceneManager.LoadScene("Scene_1a"); // return to ship
         }
         public void SceneChange2(){
                 SceneManager.LoadScene("Scene_3b"); // 

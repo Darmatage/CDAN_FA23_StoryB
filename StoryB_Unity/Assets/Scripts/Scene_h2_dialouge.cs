@@ -123,6 +123,6 @@ public void Next(){
                SceneManager.LoadScene("End_Lose2");
         }
         public void SceneChange2(){
-                SceneManager.LoadScene("Scene_1");
+                SceneManager.LoadScene("Scene_1a");
         }
 }
