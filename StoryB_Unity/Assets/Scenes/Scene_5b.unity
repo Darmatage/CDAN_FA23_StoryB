@@ -950,7 +950,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 635661570}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d682a7306bc2494f8696c255698473d, type: 3}
+  m_Script: {fileID: 11500000, guid: 586b8cfda69d2dd4a87608dfbacca50a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   primeInt: 1
@@ -1560,7 +1560,7 @@ PrefabInstance:
     - target: {fileID: 2019786261558659530, guid: 83db4a336e5f3454e8d1a52b0a7ab80f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 635661575}
+      objectReference: {fileID: 0}
     - target: {fileID: 2019786261558659530, guid: 83db4a336e5f3454e8d1a52b0a7ab80f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Choice1bFunct
@@ -2183,7 +2183,7 @@ PrefabInstance:
     - target: {fileID: 2019786261558659530, guid: 83db4a336e5f3454e8d1a52b0a7ab80f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 635661575}
+      objectReference: {fileID: 0}
     - target: {fileID: 2019786261558659530, guid: 83db4a336e5f3454e8d1a52b0a7ab80f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: SceneChange1
@@ -2393,7 +2393,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3209985762682666384, guid: 2aadffb98b1885d4c8877b257a4690e6, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Scene_4b_dialogue, Assembly-CSharp
+      value: Scene_5b_dialogue, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 3209985762682666384, guid: 2aadffb98b1885d4c8877b257a4690e6, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -2661,7 +2661,7 @@ PrefabInstance:
     - target: {fileID: 2019786261558659530, guid: 83db4a336e5f3454e8d1a52b0a7ab80f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 635661575}
+      objectReference: {fileID: 0}
     - target: {fileID: 2019786261558659530, guid: 83db4a336e5f3454e8d1a52b0a7ab80f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Choice1aFunct
