@@ -19,6 +19,9 @@ public class Scene_5a_dialogue : MonoBehaviour {
         public GameObject ArtChar1c; //smeg relieved
         public GameObject ArtChar1d; // smeg scared
         public GameObject ArtBG1;
+		public GameObject ArtBG2;
+		public GameObject ArtBG3;
+		public GameObject ArtBG4;
         public GameObject Choice1a;
         public GameObject Choice1b;
         public GameObject NextScene1Button;
@@ -32,6 +35,10 @@ void Start(){
         DialogueDisplay.SetActive(false);
         ArtChar1a.SetActive(false);
         ArtBG1.SetActive(true);
+		ArtBG2.SetActive(false);
+		ArtBG3.SetActive(false);
+		ArtBG4.SetActive(false);
+		
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
         NextScene1Button.SetActive(false);
@@ -132,28 +139,124 @@ public void Next(){
                 Char1speech.text = "Please we need–";
                 Char2name.text = "";
                 Char2speech.text = "";
-                nextButton.SetActive(false);
-                allowSpace = false;
-                NextScene1Button.SetActive(true);
         }
-
-       // after choice 1b
-       else if (primeInt == 30){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Jeda";
-                Char2speech.text = "Do not think you can fool me, human. Where will we find him?";
-        }
-       else if (primeInt == 31){
-                Char1name.text = "YOU";
-                Char1speech.text = "Ragu hangs out in a rough part of town. I'll take you now.";
+	   else if (primeInt == 24){
+		    ArtBG1.SetActive(false);
+		    ArtBG3.SetActive(true);
+			ArtChar1a.SetActive(false);
+                Char1name.text = "Cadet Smeg";
+                Char1speech.text = "...";
                 Char2name.text = "";
                 Char2speech.text = "";
-                nextButton.SetActive(false);
-                allowSpace = false;
-                NextScene2Button.SetActive(true);
         }
-
+	    else if (primeInt == 25){
+		    ArtBG3.SetActive(false);
+		    ArtBG2.SetActive(true);
+			ArtChar1a.SetActive(true);
+                Char1name.text = "Cadet Smeg";
+                Char1speech.text = "...";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+		else if (primeInt == 26){
+                Char1name.text = "Cadet Smeg";
+                Char1speech.text = "What...";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+		else if (primeInt == 27){
+                Char1name.text = "Cadet Smeg";
+                Char1speech.text = "Where am I? HELP!";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+		else if (primeInt == 28){
+                Char1name.text = "Cadet Smeg";
+                Char1speech.text = " I need to call the captain!";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+		else if (primeInt == 29){
+                Char1name.text = "Cadet Smeg";
+                Char1speech.text = " ...";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+		else if (primeInt == 30){
+                Char1name.text = "Cadet Smeg";
+                Char1speech.text = "Oh no… where’s my stuff?";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+		else if (primeInt == 31){
+                Char1name.text = "Cadet Smeg";
+                Char1speech.text = "HELLO!! HELP! WHERE AM I!";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+	    else if (primeInt == 32){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "???";
+                Char2speech.text = "The subject is awake";
+        }
+		else if (primeInt == 33){
+                Char1name.text = "Cadet Smeg";
+                Char1speech.text = "What? Who said that?";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+		else if (primeInt == 34){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "???";
+                Char2speech.text = "None of your concern.";
+        }
+		else if (primeInt == 35){
+                Char1name.text = "Cadet Smeg";
+                Char1speech.text = "Where am I?";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+		else if (primeInt == 36){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "???";
+                Char2speech.text = "Welcome to Area 51. Prepare to spend the rest of your life here.";
+        }
+		else if (primeInt == 36){
+                Char1name.text = "Cadet Smeg";
+                Char1speech.text = "What are you going to do to me?";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+		else if (primeInt == 37){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "???";
+                Char2speech.text = "That information is classified.";
+        }
+       // after choice 1b
+       else if (primeInt == 49){
+		    ArtBG1.SetActive(false);
+		    ArtBG4.SetActive(true);
+                Char1name.text = "Cadet Smeg";
+                Char1speech.text = "Woah… These buildings are…";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+       else if (primeInt == 50 ){
+                Char1name.text = "Cadet Smeg";
+                Char1speech.text = "Surprisingly.. Familiar?";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+       else if (primeInt == 51 ){
+                Char1name.text = "Cadet Smeg";
+                Char1speech.text = "There’s no way these triangular structures weren’t built by our kind… I should look inside…";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
       //Please do NOT delete this final bracket that ends the Next() function:
      }
 
@@ -170,22 +273,21 @@ public void Next(){
                 allowSpace = true;
         }
         public void Choice1bFunct(){
+			  	Choice1a.SetActive(false);
+				Choice1b.SetActive(false);
+                nextButton.SetActive(true);
+                allowSpace = true;
                 Char1name.text = "Cadet Smeg";
                 Char1speech.text = "Off I go!";
                 Char2name.text = "";
                 Char2speech.text = "";
-                primeInt = 29;
-                Choice1a.SetActive(false);
-                Choice1b.SetActive(false);
-                 nextButton.SetActive(false);
-                allowSpace = false;
-                NextScene2Button.SetActive(true);
-        }
+                primeInt = 48;
+        } 
 
         public void SceneChange1(){
-               SceneManager.LoadScene("Scene2a");
+               SceneManager.LoadScene("Scene_USA");
         }
         public void SceneChange2(){
-                SceneManager.LoadScene("Scene2b");
+                SceneManager.LoadScene("Scene_Giza");
         }
 }
