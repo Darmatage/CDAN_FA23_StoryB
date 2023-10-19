@@ -125,7 +125,7 @@ public void Next(){
                 allowSpace = false;
                 Choice1a.SetActive(true); // function Choice1aFunct()
 	   		 
-			   if(GameHandler.hasgumball == true) {
+			   if(GameHandler.hasGumball == true) {
 				   NextScene1Button.SetActive(true);  
 			   }
 	   }
