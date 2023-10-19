@@ -155,7 +155,7 @@ public void Next(){
                SceneManager.LoadScene("End_Lose1");
         }
         public void SceneChange2(){
-                SceneManager.LoadScene("Scene_1a");
+                SceneManager.LoadScene("Scene_5b");
         }
 				        IEnumerator TypeText(Text target, string fullText){
                 float delay = 0.01f;

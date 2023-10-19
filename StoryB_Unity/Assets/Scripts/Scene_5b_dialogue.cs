@@ -115,7 +115,7 @@ public void Next(){
 				Char3name.text = "";
                 Char3speech.text = "";
 				Char4name.text = "Robot 1";
-                Char4speech.text = "GREETINGS";
+				StartCoroutine(TypeText(Char4speech, "GREETINGS."));
 				Char5name.text = "";
                 Char5speech.text = "";
         }
@@ -250,7 +250,7 @@ public void Next(){
 				Char3name.text = "";
                 Char3speech.text = "";
 				Char4name.text = "Robot 1";
-                Char4speech.text = "DO NOT FEAR CADET SMEG, OUR ODDS OF WINNING ARE 100%";
+				StartCoroutine(TypeText(Char4speech, "DO NOT FEAR CADET SMEG, OUR ODDS OF WINNING ARE 100%."));
 				Char5name.text = "";
                 Char5speech.text = "";
         }
@@ -478,4 +478,16 @@ public void Next(){
                 SceneManager.LoadScene("Scene2b");
         }
 		*/
+		  IEnumerator TypeText(Text target, string fullText){
+                float delay = 0.01f;
+                nextButton.SetActive(false);
+                allowSpace = false;
+                for (int i = 0; i < fullText.Length; i++){
+                        string currentText = fullText.Substring(0,i);
+                        target.text = currentText;
+                        yield return new WaitForSeconds(delay);
+                }
+                nextButton.SetActive(true);
+                allowSpace = true;
+        }
 }
