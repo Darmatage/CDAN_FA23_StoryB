@@ -297,6 +297,7 @@ public void Next(){
                 Char5speech.text = "";
         }
 			else if (primeInt == 18){
+					ArtChar2a.SetActive(false);
 					ArtChar3c.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
