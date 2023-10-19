@@ -751,6 +751,42 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 499328149}
     m_Modifications:
+    - target: {fileID: 3655529507218479902, guid: feb1efcdcc8857b459adba7d100e9c10, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8008596665327059972}
+    - target: {fileID: 3655529507218479902, guid: feb1efcdcc8857b459adba7d100e9c10, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Resume
+      objectReference: {fileID: 0}
+    - target: {fileID: 4226276648589543131, guid: feb1efcdcc8857b459adba7d100e9c10, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4226276648589543131, guid: feb1efcdcc8857b459adba7d100e9c10, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8008596665327059972}
+    - target: {fileID: 4226276648589543131, guid: feb1efcdcc8857b459adba7d100e9c10, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 4226276648589543131, guid: feb1efcdcc8857b459adba7d100e9c10, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameHandler, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4226276648589543131, guid: feb1efcdcc8857b459adba7d100e9c10, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4235136757010654422, guid: feb1efcdcc8857b459adba7d100e9c10, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8008596665327059972}
+    - target: {fileID: 4235136757010654422, guid: feb1efcdcc8857b459adba7d100e9c10, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: QuitGame
+      objectReference: {fileID: 0}
     - target: {fileID: 5124641377050424778, guid: feb1efcdcc8857b459adba7d100e9c10, type: 3}
       propertyPath: m_AnchorMax.x
       value: 1
@@ -855,6 +891,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7554534958197627995, guid: feb1efcdcc8857b459adba7d100e9c10, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8008596665327059972}
+    - target: {fileID: 7554534958197627995, guid: feb1efcdcc8857b459adba7d100e9c10, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RestartGame
+      objectReference: {fileID: 0}
     - target: {fileID: 8638470164333494984, guid: feb1efcdcc8857b459adba7d100e9c10, type: 3}
       propertyPath: m_AnchorMax.x
       value: 1
@@ -871,6 +915,11 @@ PrefabInstance:
 --- !u!224 &867206371 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5176395175915248555, guid: feb1efcdcc8857b459adba7d100e9c10, type: 3}
+  m_PrefabInstance: {fileID: 867206370}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &867206372 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5210560728090410604, guid: feb1efcdcc8857b459adba7d100e9c10, type: 3}
   m_PrefabInstance: {fileID: 867206370}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1132828964
@@ -1307,6 +1356,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 308694405897539026, guid: 4cc694efa0c25dc4f8fa74f18c37f633, type: 3}
+      propertyPath: pauseMenuUI
+      value: 
+      objectReference: {fileID: 867206372}
     - target: {fileID: 3659725392081252076, guid: 4cc694efa0c25dc4f8fa74f18c37f633, type: 3}
       propertyPath: m_Name
       value: GameHandler

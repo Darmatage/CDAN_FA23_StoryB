@@ -265,6 +265,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: feb1efcdcc8857b459adba7d100e9c10, type: 3}
+--- !u!1 &271862771 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5210560728090410604, guid: feb1efcdcc8857b459adba7d100e9c10, type: 3}
+  m_PrefabInstance: {fileID: 271862770}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &361150662 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1069968633033042905, guid: 08e4efcfbd1364545977f84ca43b1222, type: 3}
@@ -2028,6 +2033,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 308694405897539026, guid: 4cc694efa0c25dc4f8fa74f18c37f633, type: 3}
+      propertyPath: pauseMenuUI
+      value: 
+      objectReference: {fileID: 271862771}
     - target: {fileID: 3659725392081252076, guid: 4cc694efa0c25dc4f8fa74f18c37f633, type: 3}
       propertyPath: m_Name
       value: GameHandler
