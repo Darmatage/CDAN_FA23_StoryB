@@ -50,4 +50,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scene_Giza.unity
     guid: 161c716a5bd3ef8468896b16d003daeb
+  - enabled: 1
+    path: Assets/Scenes/Scene_5a.unity
+    guid: d5c2d42f906583b44b33b25678ea3a04
+  - enabled: 1
+    path: Assets/Scenes/Scene_5b.unity
+    guid: 139d388964851cb4692947f55d19860b
   m_configObjects: {}
