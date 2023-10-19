@@ -781,8 +781,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Your army was not technilogically advanced enough, even with the help
-    of the squishies.
+  m_Text: 'Your army was not technilogically advanced enough.
 
 '
 --- !u!222 &1242832679

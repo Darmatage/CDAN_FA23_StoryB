@@ -365,6 +365,7 @@ public void Next(){
 
        // after choice 1a
        else if (primeInt == 23){
+		   ArtChar2a.SetActive(false);
                 //gameHandler.AddPlayerStat(1);
                 Char1name.text = "";
                 Char1speech.text = "";
@@ -390,6 +391,7 @@ public void Next(){
                 Char5speech.text = "";
         }
 		else if (primeInt == 25){
+			ArtChar3b.SetActive(false);
                 Char1name.text = "";
                 Char1speech.text = "The battle ensues";
                 Char2name.text = "";
@@ -428,8 +430,9 @@ public void Next(){
 				Char5name.text = "";
                 Char5speech.text = "";
         }
-		else if (primeInt == 28){
+			else if (primeInt == 28){
 			ArtChar1c.SetActive(false);
+			NextScene1Button.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
@@ -443,9 +446,8 @@ public void Next(){
 				//scene change
                 nextButton.SetActive(false);
                 allowSpace = false;
-                //NextScene2Button.SetActive(true);
-		
 		}
+
 
        // after choice 1b
        else if (primeInt == 30){
@@ -489,7 +491,6 @@ public void Next(){
                 Char5speech.text = "TAKE THAT";
 		}
 		else if (primeInt == 33){
-			 ArtChar2c.SetActive(false);
                 Char1name.text = "Cadet Smeg";
                 Char1speech.text = "NO!";
                 Char2name.text = "";
@@ -503,6 +504,7 @@ public void Next(){
 		}
 				else if (primeInt == 34){
 			ArtChar1c.SetActive(false);
+			NextScene1Button.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
@@ -516,7 +518,6 @@ public void Next(){
 				//scene change
                 nextButton.SetActive(false);
                 allowSpace = false;
-                //NextScene2Button.SetActive(true);
 		}
 
       //Please do NOT delete this final bracket that ends the Next() function:
@@ -524,6 +525,7 @@ public void Next(){
 
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and SceneChanges)
         public void Choice1aFunct(){
+			ArtChar2b.SetActive(false);
                 Char1name.text = "Cadet Smeg";
                 Char1speech.text = "Squishy Boots! Would your people be willing to fight with us in battle?";
                 Char2name.text = "";
@@ -539,6 +541,7 @@ public void Next(){
                 allowSpace = true;
         }
         public void Choice1bFunct(){
+		ArtChar2b.SetActive(false);
                 Char1name.text = "Cadet Smeg";
                 Char1speech.text = "Squishy Boots! Your people should find shelter from the battle!";
                 Char2name.text = "";
