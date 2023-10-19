@@ -28,6 +28,7 @@ public class Scene_5b_dialogue : MonoBehaviour {
 		public GameObject ArtChar2c;
 		public GameObject ArtChar3a; // Boots
 		public GameObject ArtChar3b;
+		public GameObject ArtChar3c;
 		public GameObject ArtChar4; // Robot Leader
 		public GameObject ArtChar5; // evilalien
 		
@@ -53,6 +54,7 @@ void Start(){
 		ArtChar2c.SetActive(false);
 		ArtChar3a.SetActive(false);
 		ArtChar3b.SetActive(false);
+		ArtChar3c.SetActive(false);
 		ArtChar4.SetActive(false);
 		ArtChar5.SetActive(false);
 		
@@ -161,7 +163,7 @@ public void Next(){
 				Char5name.text = "";
                 Char5speech.text = "";
         }
-       else if (primeInt == 8){
+		else if (primeInt == 8){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Captain";
@@ -173,7 +175,7 @@ public void Next(){
 				Char5name.text = "";
                 Char5speech.text = "";
 		  }
-       else if (primeInt == 9){
+		else if (primeInt == 9){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Crowd";
@@ -185,7 +187,7 @@ public void Next(){
 				Char5name.text = "";
                 Char5speech.text = "";
         }
-		else if (primeInt == 10){
+			else if (primeInt == 10){
                 Char1name.text = "Cadet Smeg";
                 Char1speech.text = "Smeg: We’ve done it! We are going to- wait, whats that alarm sound?";
                 Char2name.text = "";
@@ -197,9 +199,9 @@ public void Next(){
 				Char5name.text = "";
                 Char5speech.text = "";
         }
-		else if (primeInt == 11){
+			else if (primeInt == 11){
 				   ArtChar1d.SetActive(false);
-				   	   ArtChar1c.SetActive(true);
+				   ArtChar1c.SetActive(true);
                 Char1name.text = "Cadet Smeg";
                 Char1speech.text = "Captain! the enemies have arrived!";
                 Char2name.text = "";
@@ -211,7 +213,7 @@ public void Next(){
 				Char5name.text = "";
                 Char5speech.text = "";
         }
-				else if (primeInt == 12){
+			else if (primeInt == 12){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Captain";
@@ -224,14 +226,14 @@ public void Next(){
                 Char5speech.text = "";
         }
 		
-				else if (primeInt == 13){
+			else if (primeInt == 13){
 					ArtChar2a.SetActive(false);
 					 ArtChar1c.SetActive(false);
 					ArtChar1d.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Cadet Smeg";
-                Char2speech.text = "*Gulp* I sure hope we can win this...";
+                Char2speech.text = "(Gulp) I sure hope we can win this...";
 				Char3name.text = "";
                 Char3speech.text = "";
 				Char4name.text = "";
@@ -265,7 +267,7 @@ public void Next(){
 				Char5name.text = "";
                 Char5speech.text = "";
         }
-				else if (primeInt == 16){
+		else if (primeInt == 16){
 			      ArtChar3a.SetActive(false);
 					ArtChar1c.SetActive(false);
                 Char1name.text = "";
@@ -282,6 +284,7 @@ public void Next(){
 			else if (primeInt == 17){
 				ArtChar2b.SetActive(false);
 				ArtChar2a.SetActive(true);
+				ArtChar5.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Captain";
@@ -294,67 +297,29 @@ public void Next(){
                 Char5speech.text = "";
         }
 			else if (primeInt == 18){
-					ArtChar3a.SetActive(false);
-					ArtChar3b.SetActive(true);
+					ArtChar3c.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
                 Char2speech.text = "";
 				Char3name.text = "Squishy Boots";
-                Char3speech.text = "Squishy!";
+                Char3speech.text = "Smeg! This guy is being really mean to me, help!";
 				Char4name.text = "";
                 Char4speech.text = "";
 				Char5name.text = "";
                 Char5speech.text = "";
         }
-					else if (primeInt == 19){
-						ArtChar1d.SetActive(true);
+			else if (primeInt == 19){
+				 ArtChar5.SetActive(false);
+				ArtChar3c.SetActive(false);
+				ArtChar2a.SetActive(false);
+				ArtChar1d.SetActive(true);
                 Char1name.text = "Cadet Smeg";
-                Char1speech.text = "(thoughts) uhoh…what am I going to do…";
+                Char1speech.text = "OH NO!! What am I going to do??";
                 Char2name.text = "";
                 Char2speech.text = "";
 				Char3name.text = "";
                 Char3speech.text = "";
-				Char4name.text = "";
-                Char4speech.text = "";
-				Char5name.text = "";
-                Char5speech.text = "";
-		}
-					else if (primeInt == 20){
-						ArtChar2a.SetActive(false);
-						ArtChar2c.SetActive(true);
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Captain";
-                Char2speech.text = "Do you hear that alarm, Smeg?";
-				Char3name.text = " ";
-                Char3speech.text = "!";
-				Char4name.text = "";
-                Char4speech.text = "";
-				Char5name.text = "";
-                Char5speech.text = "";
-        }
-			else if (primeInt == 21){
-                Char1name.text = "Cadet Smeg";
-                Char1speech.text = "OH NO! CAPTAIN, ENEMY FORCES HAVE ARRIVED!";
-                Char2name.text = "";
-                Char2speech.text = "";
-				Char3name.text = " ";
-                Char3speech.text = "!";
-				Char4name.text = "";
-                Char4speech.text = "";
-				Char5name.text = "";
-                Char5speech.text = "";
-        }
-			else if (primeInt == 22){
-						ArtChar2c.SetActive(false);
-						ArtChar2b.SetActive(true);
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Captain";
-                Char2speech.text = "Prepare for battle!";
-				Char3name.text = " ";
-                Char3speech.text = "!";
 				Char4name.text = "";
                 Char4speech.text = "";
 				Char5name.text = "";
@@ -368,14 +333,13 @@ public void Next(){
 
        // after choice 1a
        else if (primeInt == 23){
-		   ArtChar2a.SetActive(false);
                 //gameHandler.AddPlayerStat(1);
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-				Char3name.text = "Squishy Boots";
-                Char3speech.text = "We have never fought before, but we can try!";
+                Char2name.text = "Captain";
+                Char2speech.text = "Thank you for the assist Cadet! You've saved my life! I'll see you promoted for this!";
+				Char3name.text = "";
+                Char3speech.text = "";
 				Char4name.text = "";
                 Char4speech.text = "";
 				Char5name.text = "";
@@ -383,7 +347,7 @@ public void Next(){
         }
        else if (primeInt == 24){
                 Char1name.text = "Cadet Smeg";
-                Char1speech.text = "Thank you Squishy Boots!";
+                Char1speech.text = "Oh..no... Squishy Boots...";
                 Char2name.text = "";
                 Char2speech.text = "";
 				Char3name.text = "";
@@ -394,62 +358,21 @@ public void Next(){
                 Char5speech.text = "";
         }
 		else if (primeInt == 25){
-			ArtChar3b.SetActive(false);
+				NextScene1Button.SetActive(true);
                 Char1name.text = "";
-                Char1speech.text = "The battle ensues";
-                Char2name.text = "";
-                Char2speech.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Captain";
+                Char2speech.text = "His sacrifice will not be in vain...We will honor him for years-NO. Generations to come.";
 				Char3name.text = "";
                 Char3speech.text = "";
 				Char4name.text = "";
                 Char4speech.text = "";
 				Char5name.text = "";
                 Char5speech.text = "";
-        }
-		 else if (primeInt == 26){
-		   ArtChar5.SetActive(true);
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-				Char3name.text = "";
-                Char3speech.text = "";
-				Char4name.text = "";
-                Char4speech.text = "";
-				Char5name.text = "Evil Alien";
-                Char5speech.text = "TAKE THAT";
-        }
-		 else if (primeInt == 27){
-		   ArtChar1d.SetActive(false);
-		   ArtChar1c.SetActive(true);
-                Char1name.text = "Cadet Smeg";
-                Char1speech.text = "NO!";
-                Char2name.text = "";
-                Char2speech.text = "";
-				Char3name.text = "";
-                Char3speech.text = "";
-				Char4name.text = "";
-                Char4speech.text = "";
-				Char5name.text = "";
-                Char5speech.text = "";
-        }
-			else if (primeInt == 28){
-			ArtChar1c.SetActive(false);
-			NextScene1Button.SetActive(true);
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-				Char3name.text = "";
-                Char3speech.text = "";
-				Char4name.text = "";
-                Char4speech.text = "";
-				Char5name.text = "Evil Alien";
-                Char5speech.text = "HAHA Victory is ours!";
-				//scene change
+			//scene change
                 nextButton.SetActive(false);
                 allowSpace = false;
-		}
+        }
 
 
        // after choice 1b
@@ -459,16 +382,15 @@ public void Next(){
                 Char2name.text = "";
                 Char2speech.text = "";
 				Char3name.text = "Squishy Boots";
-                Char3speech.text = "OK youuuu got it!";
+                Char3speech.text = "Thank you Smeg! You really are my Best Friend";
 				Char4name.text = "";
                 Char4speech.text = "";
 				Char5name.text = "";
                 Char5speech.text = "";
         }
 			else if (primeInt == 31){
-				ArtChar3b.SetActive(false);
-                Char1name.text = "";
-                Char1speech.text = "The battle ensues";
+                Char1name.text = "Cadet Smeg";
+                Char1speech.text = "Oh..no... Captain...";
                 Char2name.text = "";
                 Char2speech.text = "";
 				Char3name.text = "";
@@ -479,23 +401,23 @@ public void Next(){
                 Char5speech.text = "";
         }
        else if (primeInt == 32){
-		   ArtChar1d.SetActive(false);
-		   ArtChar1c.SetActive(true);
-		    ArtChar5.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
                 Char2speech.text = "";
-				Char3name.text = "";
-                Char3speech.text = "";
+				Char3name.text = "Squishy Boots";
+                Char3speech.text = "I'm sorry about your friend Smeg... But it looks like we won!";
 				Char4name.text = "";
                 Char4speech.text = "";
-				Char5name.text = "Evil Alien";
-                Char5speech.text = "TAKE THAT";
+				Char5name.text = "";
+                Char5speech.text = "";
 		}
 		else if (primeInt == 33){
+				ArtChar1d.SetActive(false);
+				ArtChar1b.SetActive(true);
+				NextScene1Button.SetActive(true);
                 Char1name.text = "Cadet Smeg";
-                Char1speech.text = "NO!";
+                Char1speech.text = "We did win. Thank you Captain. Your sacrifice wont be in vain!";
                 Char2name.text = "";
                 Char2speech.text = "";
 				Char3name.text = "";
@@ -504,20 +426,6 @@ public void Next(){
                 Char4speech.text = "";
 				Char5name.text = " ";
                 Char5speech.text = "";
-		}
-				else if (primeInt == 34){
-			ArtChar1c.SetActive(false);
-			NextScene1Button.SetActive(true);
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-				Char3name.text = "";
-                Char3speech.text = "";
-				Char4name.text = "";
-                Char4speech.text = "";
-				Char5name.text = "Evil Alien";
-                Char5speech.text = "HAHA Victory is ours!";
 				//scene change
                 nextButton.SetActive(false);
                 allowSpace = false;
@@ -528,9 +436,9 @@ public void Next(){
 
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and SceneChanges)
         public void Choice1aFunct(){
-			ArtChar2b.SetActive(false);
+		    ArtChar2c.SetActive(true);
                 Char1name.text = "Cadet Smeg";
-                Char1speech.text = "Squishy Boots! Would your people be willing to fight with us in battle?";
+                Char1speech.text = "I'm coming Captain!";
                 Char2name.text = "";
                 Char2speech.text = "";
 				Char3name.text = "";
@@ -544,9 +452,9 @@ public void Next(){
                 allowSpace = true;
         }
         public void Choice1bFunct(){
-		ArtChar2b.SetActive(false);
+			   		ArtChar3a.SetActive(true);
                 Char1name.text = "Cadet Smeg";
-                Char1speech.text = "Squishy Boots! Your people should find shelter from the battle!";
+                Char1speech.text = "I'm coming Squishy Boots!";
                 Char2name.text = "";
                 Char2speech.text = "";
 				Char3name.text = "";
