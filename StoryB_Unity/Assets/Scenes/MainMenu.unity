@@ -274,8 +274,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Race to the correct planet to get your hair done and save the whole entire
-    galaxy!
+  m_Text: 'Your home planet has been invaded by evil aliens!
+
+    Find a new home,
+    or try your best to take back your planet!'
 --- !u!222 &69606690
 CanvasRenderer:
   m_ObjectHideFlags: 0
