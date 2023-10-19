@@ -310,7 +310,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3154063343734540959, guid: 83db4a336e5f3454e8d1a52b0a7ab80f, type: 3}
       propertyPath: m_Text
-      value: BACK TO SHIP
+      value: Return to Squishmuhguy
+      objectReference: {fileID: 0}
+    - target: {fileID: 3154063343734540959, guid: 83db4a336e5f3454e8d1a52b0a7ab80f, type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3154063343734540959, guid: 83db4a336e5f3454e8d1a52b0a7ab80f, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 4414907852507968895, guid: 83db4a336e5f3454e8d1a52b0a7ab80f, type: 3}
       propertyPath: m_AnchoredPosition.x

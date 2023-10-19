@@ -9,6 +9,7 @@ public class GameHandler : MonoBehaviour{
         public static bool hasGumball = false;
 		public static bool hasBeenToSquish = false;
 		public static bool hasBeenToRobot = false;
+		public static bool hasCalledCaptain = false;
 		
         // public GameObject textGameObject;
 

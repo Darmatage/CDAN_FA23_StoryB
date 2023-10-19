@@ -336,6 +336,7 @@ public void Next(){
                 allowSpace = true;
         }
         public void Choice2bFunct(){
+			GameHandler.hasCalledCaptain = true;
                 Char1name.text = "Cadet Smeg";
                 Char1speech.text = "This place seems great! I will call my Captain. ";
                 Char2name.text = "";

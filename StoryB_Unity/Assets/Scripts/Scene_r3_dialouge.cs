@@ -102,8 +102,14 @@ public void Next(){
                 nextButton.SetActive(false);
                 allowSpace = false;
                // function Choice1aFunct()
-                NextScene1Button.SetActive(true);
+			   
+			   
+			   if(GameHandler.hasCalledCaptain == true){
                 NextScene2Button.SetActive(true);
+			   }
+				
+				
+                NextScene1Button.SetActive(true);
 
         }
 
