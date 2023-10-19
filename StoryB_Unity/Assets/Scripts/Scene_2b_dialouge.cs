@@ -92,7 +92,8 @@ public void Next(){
        else if (primeInt == 4){
 		   ArtChar1a.SetActive(false);
 		   ArtChar1d.SetActive(true);
-		   
+		   ArtChar2a.SetActive(false);
+		   ArtChar2c.SetActive(true);
                 Char1name.text = "Cadet Smeg";
                 Char1speech.text = "OH MY GOSH PLEASE DON'T HURT ME";
                 Char2name.text = "";
@@ -105,18 +106,24 @@ public void Next(){
                 Char2speech.text = "I’m not gonna hurt you friend! I saw the ship come down and I came to say Hi!";
         }
        else if (primeInt == 6){
+		     ArtChar1d.SetActive(false);
+		     ArtChar1c.SetActive(true);
                 Char1name.text = "Cadet Smeg";
                 Char1speech.text = "Thank goodness...";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
        else if (primeInt ==7){
+			 ArtChar1c.SetActive(false);
+		     ArtChar1b.SetActive(true);
                 Char1name.text = "Cadet Smeg";
                 Char1speech.text = "Who are you?";
                 Char2name.text = "";
                 Char2speech.text = "";
 		}
        else if (primeInt == 8){
+		     ArtChar2c.SetActive(false);
+		     ArtChar2a.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Squishy Boots";
@@ -131,12 +138,16 @@ public void Next(){
 		
 		// after choice 1a
        else if (primeInt == 20){
+			 ArtChar2a.SetActive(false);
+		     ArtChar2c.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Squishy Boots";
                 Char2speech.text = "That's so sad! Well of course your people could come here. The more friends the merrier.";
         }
        else if (primeInt == 21){
+		    ArtChar1a.SetActive(false);
+		    ArtChar1c.SetActive(true);
                 Char1name.text = "Cadet Smeg";
                 Char1speech.text = "Oh that was easy, don’t you guys have a leader or something?";
                 Char2name.text = "";
@@ -149,12 +160,16 @@ public void Next(){
                 Char2speech.text = "Uh, I don’t think so. We all just kinda walk around and say “hi” to each other!";
         }
 	else if (primeInt == 23){
+			ArtChar1c.SetActive(false);
+		    ArtChar1a.SetActive(true);
                 Char1name.text = "Cadet Smeg";
                 Char1speech.text = "Oh no, there's no army? That's not good…do you guys have food?";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
 	else if (primeInt == 24){
+		     ArtChar2c.SetActive(false);
+		     ArtChar2b.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Squishy Boots";
@@ -162,6 +177,8 @@ public void Next(){
 				GameHandler.hasGumball = true;
         }
 	else if (primeInt == 25){
+			ArtChar1a.SetActive(false);
+		    ArtChar1c.SetActive(true);
                 Char1name.text = "Cadet Smeg";
                 Char1speech.text = "Oh thanks. Looks like a gumball. ";
                 Char2name.text = "";
@@ -179,12 +196,16 @@ public void Next(){
                 Char2speech.text = "Well, normally we like to help people who are in desperate need, but since you’re fine, I will say good day and see if I can find someone who needs me.";
         }
 		else if (primeInt == 31){
+			 ArtChar1b.SetActive(false);
+		     ArtChar1a.SetActive(true);
                 Char1name.text = "Cadet Smeg";
                 Char1speech.text = "Oh! Wait. Sorry. We actually have a desperate need to find a new home! Our planet is being attacked!";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
 		else if (primeInt == 32){
+			 ArtChar2a.SetActive(false);
+		     ArtChar2c.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Squishy Boots";
@@ -206,6 +227,10 @@ public void Next(){
 		
 		
 		else if (primeInt == 40){
+			ArtChar1a.SetActive(false);
+		    ArtChar1b.SetActive(true);
+			ArtChar2c.SetActive(false);
+		    ArtChar2b.SetActive(true);
                 Char1name.text = "Cadet Smeg";
                 Char1speech.text = "I Guess I can call the captain and tell him we can come here? Or maybe I should keep looking at other planets?";
                 Char2name.text = "";
@@ -273,6 +298,8 @@ public void Next(){
 
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and SceneChanges)
         public void Choice1aFunct(){
+			ArtChar1b.SetActive(false);
+		    ArtChar1a.SetActive(true);
                 Char1name.text = "Cadet Smeg";
                 Char1speech.text = "Oh yes, My home planet is being attacked by an evil alien empire! I’ve been sent to find sanctuary for our planet and our army, We need your planets help!";
                 Char2name.text = "";
@@ -296,6 +323,8 @@ public void Next(){
         }
 		
         public void Choice2aFunct(){
+			ArtChar1c.SetActive(false);
+		    ArtChar1a.SetActive(true);
                 Char1name.text = "Cadet Smeg";
                 Char1speech.text = "I better find more reinforcements. Thank you for your help squishy boots!";
                 Char2name.text = "";
