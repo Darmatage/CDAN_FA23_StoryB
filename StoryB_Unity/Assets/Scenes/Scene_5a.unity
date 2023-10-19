@@ -123,11 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &101242763 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3112140322438540109, guid: 83db4a336e5f3454e8d1a52b0a7ab80f, type: 3}
-  m_PrefabInstance: {fileID: 959139163}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &361150662 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1069968633033042905, guid: 08e4efcfbd1364545977f84ca43b1222, type: 3}
@@ -151,7 +146,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2019786261558659530, guid: 83db4a336e5f3454e8d1a52b0a7ab80f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Scene1Dialogue, Assembly-CSharp
+      value: Scene_5a_dialogue, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2019786261558659530, guid: 83db4a336e5f3454e8d1a52b0a7ab80f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -257,6 +252,11 @@ PrefabInstance:
 --- !u!224 &613092243 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6886738503246378206, guid: 83db4a336e5f3454e8d1a52b0a7ab80f, type: 3}
+  m_PrefabInstance: {fileID: 613092242}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &613092244 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3112140322438540109, guid: 83db4a336e5f3454e8d1a52b0a7ab80f, type: 3}
   m_PrefabInstance: {fileID: 613092242}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &635661570
@@ -384,7 +384,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 635661570}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0967c0cff5bf5594f9a8fbf4df3edc94, type: 3}
+  m_Script: {fileID: 11500000, guid: 496334a0b58ec5946ab883a4069014ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   primeInt: 1
@@ -393,16 +393,12 @@ MonoBehaviour:
   Char2name: {fileID: 5241774605417234304}
   Char2speech: {fileID: 5241774605417234303}
   DialogueDisplay: {fileID: 5241774605417234302}
-  ArtChar1a: {fileID: 1165964097}
-  ArtChar1b: {fileID: 0}
-  ArtChar2: {fileID: 0}
+  ArtChar1a: {fileID: 1252848132}
   ArtBG1: {fileID: 2076892561}
   Choice1a: {fileID: 5436677627378729404}
   Choice1b: {fileID: 1477053599}
-  Choice2a: {fileID: 1419439276}
-  Choice2b: {fileID: 101242763}
-  NextScene1Button: {fileID: 1048287408}
-  NextScene2Button: {fileID: 1064770333}
+  NextScene1Button: {fileID: 2101788560}
+  NextScene2Button: {fileID: 613092244}
   nextButton: {fileID: 1499761494344494467}
 --- !u!1 &955363842
 GameObject:
@@ -491,10 +487,10 @@ PrefabInstance:
     - target: {fileID: 2019786261558659530, guid: 83db4a336e5f3454e8d1a52b0a7ab80f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 635661575}
+      objectReference: {fileID: 635661570}
     - target: {fileID: 2019786261558659530, guid: 83db4a336e5f3454e8d1a52b0a7ab80f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Choice1bFunct
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2019786261558659530, guid: 83db4a336e5f3454e8d1a52b0a7ab80f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -621,10 +617,10 @@ PrefabInstance:
     - target: {fileID: 2019786261558659530, guid: 83db4a336e5f3454e8d1a52b0a7ab80f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 635661575}
+      objectReference: {fileID: 635661570}
     - target: {fileID: 2019786261558659530, guid: 83db4a336e5f3454e8d1a52b0a7ab80f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Choice1aFunct
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2019786261558659530, guid: 83db4a336e5f3454e8d1a52b0a7ab80f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -739,16 +735,6 @@ PrefabInstance:
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6886738503246378206, guid: 83db4a336e5f3454e8d1a52b0a7ab80f, type: 3}
   m_PrefabInstance: {fileID: 1001427139}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1048287408 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3112140322438540109, guid: 83db4a336e5f3454e8d1a52b0a7ab80f, type: 3}
-  m_PrefabInstance: {fileID: 2101788558}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1064770333 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3112140322438540109, guid: 83db4a336e5f3454e8d1a52b0a7ab80f, type: 3}
-  m_PrefabInstance: {fileID: 613092242}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1165964097
 GameObject:
@@ -994,11 +980,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1419439276 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3112140322438540109, guid: 83db4a336e5f3454e8d1a52b0a7ab80f, type: 3}
-  m_PrefabInstance: {fileID: 1001427139}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1477053597
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1017,7 +998,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2019786261558659530, guid: 83db4a336e5f3454e8d1a52b0a7ab80f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Scene1Dialogue, Assembly-CSharp
+      value: Scene_5a_dialogue, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2019786261558659530, guid: 83db4a336e5f3454e8d1a52b0a7ab80f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -1368,7 +1349,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2019786261558659530, guid: 83db4a336e5f3454e8d1a52b0a7ab80f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Scene1Dialogue, Assembly-CSharp
+      value: Scene_5a_dialogue, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2019786261558659530, guid: 83db4a336e5f3454e8d1a52b0a7ab80f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -1476,6 +1457,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6886738503246378206, guid: 83db4a336e5f3454e8d1a52b0a7ab80f, type: 3}
   m_PrefabInstance: {fileID: 2101788558}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2101788560 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3112140322438540109, guid: 83db4a336e5f3454e8d1a52b0a7ab80f, type: 3}
+  m_PrefabInstance: {fileID: 2101788558}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2138873212
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1555,7 +1541,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3209985762682666384, guid: 2aadffb98b1885d4c8877b257a4690e6, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Scene1Dialogue, Assembly-CSharp
+      value: Scene_5a_dialogue, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 3209985762682666384, guid: 2aadffb98b1885d4c8877b257a4690e6, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -1840,7 +1826,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2019786261558659530, guid: 83db4a336e5f3454e8d1a52b0a7ab80f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Scene1Dialogue, Assembly-CSharp
+      value: Scene_5a_dialogue, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2019786261558659530, guid: 83db4a336e5f3454e8d1a52b0a7ab80f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName

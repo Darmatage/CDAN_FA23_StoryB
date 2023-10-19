@@ -16,11 +16,13 @@ public class Scene_2b : MonoBehaviour {
        //public Text Char3speech;
         public GameObject DialogueDisplay;
         public GameObject ArtChar1a;
-       //public GameObject ArtChar1b;
-       //public GameObject ArtChar2;
+        public GameObject ArtChar1b;
+        public GameObject ArtChar2;
         public GameObject ArtBG1;
         public GameObject Choice1a;
         public GameObject Choice1b;
+		public GameObject Choice2a;
+        public GameObject Choice2b;
         public GameObject NextScene1Button;
         public GameObject NextScene2Button;
         public GameObject nextButton;
@@ -57,7 +59,7 @@ public void Next(){
                 ArtChar1a.SetActive(true);
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "Cadet Smeg";
-                Char1speech.text = "Whoa this place is so bright and colorful! A completely different vibe than my world. But…there's something weird about this place… seems awfully squishy? ";
+                Char1speech.text = "Whoa this place is so bright and colorful! A completely different vibe than my world. But…there's something weird about this place… seems awfully squishy?";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
@@ -78,7 +80,7 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "???";
-                Char2speech.text = "I’m not gonna hurt you friend! I saw the ship come down and I came to say Hi";
+                Char2speech.text = "I’m not gonna hurt you friend! I saw the ship come down and I came to say Hi!";
         }
        else if (primeInt == 6){
                 Char1name.text = "Cadet Smeg";
@@ -97,94 +99,80 @@ public void Next(){
                 Char1speech.text = "";
                 Char2name.text = "Squishy Boots";
                 Char2speech.text = "“I’m Squishy Boots! What can I do for you, friend?";
-		}
-       else if (primeInt ==9){
-                Char1name.text = "Cadet Smeg";
-                Char1speech.text = "Oh yes, My home planet is being attacked by an evil alien empire!";
-                Char2name.text = "";
-                Char2speech.text = "";
-		}
-       else if (primeInt ==10){
-                Char1name.text = "Cadet Smeg";
-                Char1speech.text = "I’ve been sent to find sanctuary for our planet and our army, We need your planets help!";
-                Char2name.text = "";
-                Char2speech.text = "";
-		}
-       else if (primeInt ==11){
+				// Turn off "Next" button, turn on "Choice" buttons
+                nextButton.SetActive(false);
+                allowSpace = false;
+                Choice1a.SetActive(true); // function Choice1aFunct(): Trust Squishy
+                Choice1b.SetActive(true); // function Choice1bFunct(): Lie to Squishy
+        }
+       else if (primeInt == 9){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Squishy Boots";
                 Char2speech.text = "That's so sad! Well of course your people could come here. The more friends the merrier.";
-	   } 
-       else if (primeInt ==12){
+        }
+       else if (primeInt == 10){
                 Char1name.text = "Cadet Smeg";
-                Char1speech.text = "oh that was easy, dont you guys have a leader or something?";
+                Char1speech.text = "Oh that was easy, don’t you guys have a leader or something?";
                 Char2name.text = "";
                 Char2speech.text = "";
-		}
-       else if (primeInt == 13){
+        }
+    else if (primeInt == 11){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Squishy Boots";
-                Char2speech.text = "uh, i dont think so. We all just kinda walk around and say “hi” to each other!";
-	    }
-       else if (primeInt ==14){
+                Char2speech.text = "Uh, I don’t think so. We all just kinda walk around and say “hi” to each other!";
+        }
+	else if (primeInt == 12){
                 Char1name.text = "Cadet Smeg";
-                Char1speech.text = "oh no, there's no army? That's not good…do you guys have food?";
+                Char1speech.text = "Oh no, there's no army? That's not good…do you guys have food?";
                 Char2name.text = "";
                 Char2speech.text = "";
-		}
+        }
+	else if (primeInt == 13){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Squishy Boots";
+                Char2speech.text = "Of course we do! Here!";
+        }
+	else if (primeInt == 14){
+                Char1name.text = "Cadet Smeg";
+                Char1speech.text = "Oh thanks. I Guess I can call the captain and tell him we can come here? Or maybe I should keep looking at other planets?";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+       // after choice 1b
        else if (primeInt == 15){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Squishy Boots";
-                Char2speech.text = "of course we do! Here!";
-		}		
-       else if (primeInt == 16){
+                Char2speech.text = "Well, normally we like to help people who are in desperate need, but since you’re fine, I will say good day and see if I can find someone who needs me.";
+        }
+		else if (primeInt == 16){
                 Char1name.text = "Cadet Smeg";
-                Char1speech.text = "oh thanks. I Guess I can call the captain and tell him we can come here? Or maybe I should keep looking at other planets?";
+                Char1speech.text = "Oh! Wait. Sorry. We actually have a desperate need to find a new home! Our planet is being attacked!";
                 Char2name.text = "";
                 Char2speech.text = "";
-                // Turn off "Next" button, turn on "Choice" buttons
-                nextButton.SetActive(false);
-                allowSpace = false;
-                Choice1a.SetActive(true); // function Choice1aFunct()
-                Choice1b.SetActive(true); // function Choice1bFunct()
         }
-
-       // after choice 1a
-       else if (primeInt == 20){
-                //gameHandler.AddPlayerStat(1);
+		else if (primeInt == 17){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Jeda";
-                Char2speech.text = "Then you are no use to me, and must be silenced.";
+                Char2name.text = "Squishy Boots";
+                Char2speech.text = "You lied to me? Not cool.";
         }
-       else if (primeInt == 21){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Jeda";
-                Char2speech.text = "Come back here! Do not think you can hide from me!";
-                nextButton.SetActive(false);
-                allowSpace = false;
-                NextScene1Button.SetActive(true);
-        }
-
-       // after choice 1b
-       else if (primeInt == 30){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Jeda";
-                Char2speech.text = "Do not think you can fool me, human. Where will we find him?";
-        }
-       else if (primeInt == 31){
-                Char1name.text = "YOU";
-                Char1speech.text = "Ragu hangs out in a rough part of town. I'll take you now.";
+		else if (primeInt == 18){
+                Char1name.text = "Cadet Smeg";
+                Char1speech.text = "Sorry. Sorry. Can my people still come here?";
                 Char2name.text = "";
                 Char2speech.text = "";
+        }
+       else if (primeInt == 19){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Squishy Boots";
+                Char2speech.text = "Hmm. Well, we don’t turn people away who need help. Up to you.";
                 nextButton.SetActive(false);
                 allowSpace = false;
-                NextScene2Button.SetActive(true);
         }
 
       //Please do NOT delete this final bracket that ends the Next() function:
@@ -192,28 +180,27 @@ public void Next(){
 
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and SceneChanges)
         public void Choice1aFunct(){
-                Char1name.text = "YOU";
-                Char1speech.text = "I don't know what you're talking about!";
+                Char1name.text = "Cadet Smeg";
+                Char1speech.text = "Oh yes, My home planet is being attacked by an evil alien empire! I’ve been sent to find sanctuary for our planet and our army, We need your planets help!";
                 Char2name.text = "";
                 Char2speech.text = "";
-                primeInt = 19;
+                primeInt = 8;
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
                 nextButton.SetActive(true);
                 allowSpace = true;
         }
         public void Choice1bFunct(){
-                Char1name.text = "YOU";
-                Char1speech.text = "Sure, anything you want... just lay off the club.";
+                Char1name.text = "Cadet Smeg";
+                Char1speech.text = "Oh, just exploring the galaxy. Nothing much. What do you do around here for fun?";
                 Char2name.text = "";
                 Char2speech.text = "";
-                primeInt = 29;
+                primeInt = 14;
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
                 nextButton.SetActive(true);
                 allowSpace = true;
         }
-
         public void SceneChange1(){
                SceneManager.LoadScene("Scene2a");
         }
