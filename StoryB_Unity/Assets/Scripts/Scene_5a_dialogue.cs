@@ -14,9 +14,10 @@ public class Scene_5a_dialogue : MonoBehaviour {
        //public Text Char3name;
        //public Text Char3speech;
         public GameObject DialogueDisplay;
-        public GameObject ArtChar1a;
-       //public GameObject ArtChar1b;
-       //public GameObject ArtChar2;
+        public GameObject ArtChar1a; // smeg nervous
+        public GameObject ArtChar1b; // smeg confused
+        public GameObject ArtChar1c; //smeg relieved
+        public GameObject ArtChar1d; // smeg scared
         public GameObject ArtBG1;
         public GameObject Choice1a;
         public GameObject Choice1b;
@@ -55,23 +56,28 @@ public void Next(){
         else if (primeInt == 2){
                 ArtChar1a.SetActive(true);
                 DialogueDisplay.SetActive(true);
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Jeda";
-                Char2speech.text = "Wakey wakey, human.";
+                Char1name.text = "Cadet Smeg";
+                Char1speech.text = "This planet is huge!";
+                Char2name.text = "";
+                Char2speech.text = "";
         }
        else if (primeInt ==3){
-                Char1name.text = "YOU";
-                Char1speech.text = "Wuh..? What happened?";
+                Char1name.text = "Cadet Smeg";
+                Char1speech.text = "But… while I was landing, I saw an abundance of h2o, and there appears to be none where I landed…";
                 Char2name.text = "";
                 Char2speech.text = "";
                 //gameHandler.AddPlayerStat(1);
         }
        else if (primeInt == 4){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Jeda";
-                Char2speech.text = "I know I did not hit you that hard.";
+                Char1name.text = "Cadet Smeg";
+                Char1speech.text = " Should I stay here? Or explore this planet a bit more? ";
+                Char2name.text = "";
+                Char2speech.text = "";
+				// Turn off "Next" button, turn on "Choice" buttons
+                nextButton.SetActive(false);
+                allowSpace = false;
+                Choice1a.SetActive(true); // function Choice1aFunct()
+                Choice1b.SetActive(true); // function Choice1bFunct()
         }
        else if (primeInt == 5){
                 Char1name.text = "YOU";
@@ -96,11 +102,7 @@ public void Next(){
                 Char1speech.text = "";
                 Char2name.text = "Jeda";
                 Char2speech.text = "Do not play the stupid. You will take me to him.";
-                // Turn off "Next" button, turn on "Choice" buttons
-                nextButton.SetActive(false);
-                allowSpace = false;
-                Choice1a.SetActive(true); // function Choice1aFunct()
-                Choice1b.SetActive(true); // function Choice1bFunct()
+
         }
 
        // after choice 1a
@@ -108,14 +110,28 @@ public void Next(){
                 //gameHandler.AddPlayerStat(1);
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Jeda";
-                Char2speech.text = "Then you are no use to me, and must be silenced.";
+                Char2name.text = "???";
+                Char2speech.text = "Target has been spotted.";
         }
-       else if (primeInt == 21){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Jeda";
-                Char2speech.text = "Come back here! Do not think you can hide from me!";
+	   else if (primeInt == 21){
+                //gameHandler.AddPlayerStat(1);
+                Char1name.text = "Cadet Smeg";
+                Char1speech.text = "Huh? Who was that?";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+	    else if (primeInt == 22){
+                //gameHandler.AddPlayerStat(1);
+                Char1name.text = "Cadet Smeg";
+                Char1speech.text = "Hello? Is this your planet? Can you help me?";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+       else if (primeInt == 23){
+                Char1name.text = "Cadet Smeg";
+                Char1speech.text = "Please we need–";
+                Char2name.text = "";
+                Char2speech.text = "";
                 nextButton.SetActive(false);
                 allowSpace = false;
                 NextScene1Button.SetActive(true);
@@ -143,8 +159,8 @@ public void Next(){
 
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and SceneChanges)
         public void Choice1aFunct(){
-                Char1name.text = "YOU";
-                Char1speech.text = "I don't know what you're talking about!";
+                Char1name.text = "Cadet Smeg";
+                Char1speech.text = " I mean, it wouldn’t hurt to look around. This is a pretty big field after all… ";
                 Char2name.text = "";
                 Char2speech.text = "";
                 primeInt = 19;
@@ -154,15 +170,16 @@ public void Next(){
                 allowSpace = true;
         }
         public void Choice1bFunct(){
-                Char1name.text = "YOU";
-                Char1speech.text = "Sure, anything you want... just lay off the club.";
+                Char1name.text = "Cadet Smeg";
+                Char1speech.text = "Off I go!";
                 Char2name.text = "";
                 Char2speech.text = "";
                 primeInt = 29;
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
-                nextButton.SetActive(true);
-                allowSpace = true;
+                 nextButton.SetActive(false);
+                allowSpace = false;
+                NextScene2Button.SetActive(true);
         }
 
         public void SceneChange1(){
