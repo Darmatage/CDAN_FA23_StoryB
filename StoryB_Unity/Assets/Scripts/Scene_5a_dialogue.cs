@@ -22,6 +22,7 @@ public class Scene_5a_dialogue : MonoBehaviour {
 		public GameObject ArtBG2;
 		public GameObject ArtBG3;
 		public GameObject ArtBG4;
+		public GameObject ArtBG5;
         public GameObject Choice1a;
         public GameObject Choice1b;
         public GameObject NextScene1Button;
@@ -38,7 +39,7 @@ void Start(){
 		ArtBG2.SetActive(false);
 		ArtBG3.SetActive(false);
 		ArtBG4.SetActive(false);
-		
+		ArtBG5.SetActive(false);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
         NextScene1Button.SetActive(false);
@@ -254,6 +255,14 @@ public void Next(){
        else if (primeInt == 51 ){
                 Char1name.text = "Cadet Smeg";
                 Char1speech.text = "There’s no way these triangular structures weren’t built by our kind… I should look inside…";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+		else if (primeInt == 52 ){
+			 ArtBG4.SetActive(false);
+		    ArtBG5.SetActive(true);
+                Char1name.text = "Cadet Smeg";
+                Char1speech.text = " It sure is dusty in here, gross! I don’t think anyone’s been here in centuries.";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
