@@ -38,6 +38,10 @@ public class Scene_5a_dialogue : MonoBehaviour {
 void Start(){  
         DialogueDisplay.SetActive(false);
         ArtChar1a.SetActive(false);
+		ArtChar1b.SetActive(false);
+		ArtChar1c.SetActive(false);
+		ArtChar1d.SetActive(false);
+		
         ArtBG1.SetActive(true);
 		ArtBG2.SetActive(false);
 		ArtBG3.SetActive(false);
