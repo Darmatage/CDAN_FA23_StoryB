@@ -6,7 +6,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 
-public class Scene_r2 : MonoBehaviour {
+public class Scene_r2_dialogue : MonoBehaviour {
         public int primeInt = 1;         // This integer drives game progress!
         public Text Char1name;
         public Text Char1speech;
@@ -18,6 +18,8 @@ public class Scene_r2 : MonoBehaviour {
         public GameObject ArtChar1a;
         public GameObject ArtChar1b;
         public GameObject ArtChar1c;
+		public GameObject ArtChar1d; // relief
+		
         public GameObject ArtChar2;
         public GameObject ArtBG1;
         public GameObject Choice1a;
@@ -34,6 +36,8 @@ void Start(){
         ArtChar1a.SetActive(false);
         ArtChar1b.SetActive(false);
         ArtChar1c.SetActive(false);
+		ArtChar1d.SetActive(false);
+		
         ArtChar2.SetActive(false);
         ArtBG1.SetActive(true);
         Choice1a.SetActive(false);
@@ -117,7 +121,13 @@ public void Next(){
 		}
        else if (primeInt ==10){
                 Char1name.text = "Cadet Smeg";
-                Char1speech.text = "Um, maybe I should think about this actually, I wouldn’t want to waste the captain’s time on a lifeless planet!";
+                Char1speech.text = "Um, maybe I should think about this actually.";
+                Char2name.text = "";
+                Char2speech.text = "";
+	   }
+       else if (primeInt ==11){
+                Char1name.text = "Cadet Smeg";
+                Char1speech.text = "Should I spend the Captain’s time on a lifeless planet?";
                 Char2name.text = "";
                 Char2speech.text = "";
                 // Turn off "Next" button, turn on "Choice" buttons
@@ -126,25 +136,51 @@ public void Next(){
                 Choice1a.SetActive(true); // function Choice1aFunct()
 	   		 
 			   if(GameHandler.hasGumball == true) {
-				   NextScene1Button.SetActive(true);  
+				   Choice1b.SetActive(true);  
 			   }
 	   }
 
         
-
        // after choice 1a
        else if (primeInt == 20){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "J3FF";
-				StartCoroutine(TypeText(Char2speech, "GOODBYE TRAVELER."));
-                nextButton.SetActive(false);
-                allowSpace = false;
-                NextScene2Button.SetActive(true);
+			Char1name.text = "";
+			Char1speech.text = "";
+			Char2name.text = "J3FF";
+			StartCoroutine(TypeText(Char2speech, "GOODBYE TRAVELER."));
+        }
+       else if (primeInt == 21){
+			DialogueDisplay.SetActive(false);		   
+			Char1name.text = "";
+			Char1speech.text = "";
+			Char2name.text = "";
+			Char2speech.text = "";
+			//next scene button
+			nextButton.SetActive(false);
+			allowSpace = false;
+			NextScene2Button.SetActive(true);
         }
 
-       
 
+       // after choice 1b
+		else if (primeInt == 30){
+			Char1name.text = "";
+			Char1speech.text = "";
+			Char2name.text = "J3FF";
+			StartCoroutine(TypeText(Char2speech, "COME WITH ME."));	
+		}
+		else if (primeInt == 31){
+			DialogueDisplay.SetActive(false);
+			Char1name.text = "";
+			Char1speech.text = "";
+			Char2name.text = "";
+			Char2speech.text = "";
+			//next scene button
+			nextButton.SetActive(false);
+			allowSpace = false;
+			NextScene1Button.SetActive(true);
+		}
+
+       
       //Please do NOT delete this final bracket that ends the Next() function:
      }
 
@@ -161,23 +197,36 @@ public void Next(){
                 nextButton.SetActive(true);
                 allowSpace = true;
         }
-
-        public void SceneChange1(){
-               SceneManager.LoadScene("Scene_r3");
-        }
-        public void SceneChange2(){
-                SceneManager.LoadScene("Scene_1a");
-        }
-		        IEnumerator TypeText(Text target, string fullText){
-                float delay = 0.01f;
-                nextButton.SetActive(false);
-                allowSpace = false;
-                for (int i = 0; i < fullText.Length; i++){
-                        string currentText = fullText.Substring(0,i);
-                        target.text = currentText;
-                        yield return new WaitForSeconds(delay);
-                }
+        public void Choice1bFunct(){
+                Char1name.text = "Cadet Smeg";
+                Char1speech.text = "OK J3FF. I have something I can gift.";
+                Char2name.text = "";
+                Char2speech.text = "";
+                NextScene1Button.SetActive(false);
+                primeInt = 29;
+                Choice1a.SetActive(false);
+                Choice1b.SetActive(false);
                 nextButton.SetActive(true);
                 allowSpace = true;
-        }
+        }		
+		
+	public void SceneChange1(){
+		SceneManager.LoadScene("Scene_r3");
+	}
+	public void SceneChange2(){
+		SceneManager.LoadScene("Scene_1a");
+	}
+
+	IEnumerator TypeText(Text target, string fullText){
+		float delay = 0.01f;
+		nextButton.SetActive(false);
+		allowSpace = false;
+		for (int i = 0; i < fullText.Length; i++){
+			string currentText = fullText.Substring(0,i);
+			target.text = currentText;
+			yield return new WaitForSeconds(delay);
+		}
+		nextButton.SetActive(true);
+		allowSpace = true;
+	}
 }
