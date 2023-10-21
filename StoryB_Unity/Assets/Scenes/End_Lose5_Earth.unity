@@ -965,7 +965,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Your army was not technologically \nadvanced enough.\n"
+  m_Text: The ancient weapons and technlogy were weak in battle, and you were defeated
+    instantly.
 --- !u!222 &1242832679
 CanvasRenderer:
   m_ObjectHideFlags: 0

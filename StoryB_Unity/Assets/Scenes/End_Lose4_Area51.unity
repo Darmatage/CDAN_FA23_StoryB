@@ -965,7 +965,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Your army was not technologically \nadvanced enough.\n"
+  m_Text: 'Your spend the rest of your days as an experiment in Area 51.
+
+'
 --- !u!222 &1242832679
 CanvasRenderer:
   m_ObjectHideFlags: 0
