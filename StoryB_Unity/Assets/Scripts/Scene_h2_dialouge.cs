@@ -78,7 +78,7 @@ public void Next(){
         ArtChar1b.SetActive(false);
         ArtChar1c.SetActive(true);
                 ArtChar1b.SetActive(false);
-                ArtChar1a.SetActive(true);
+                ArtChar1a.SetActive(false);
                 Char1name.text = "Cadet Smeg";
                 Char1speech.text = "Captain! What do you mean?!";
                 Char2name.text = "";
