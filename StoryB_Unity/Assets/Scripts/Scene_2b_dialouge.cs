@@ -177,8 +177,6 @@ public void Next(){
 				GameHandler.hasGumball = true;
         }
 	else if (primeInt == 25){
-			ArtChar1a.SetActive(false);
-		    ArtChar1c.SetActive(true);
                 Char1name.text = "Cadet Smeg";
                 Char1speech.text = "Oh thanks. Looks like a gumball. ";
                 Char2name.text = "";
@@ -236,7 +234,7 @@ public void Next(){
                 Char2name.text = "";
                 Char2speech.text = "";
         }
-     else if (primeInt == 41){
+		else if (primeInt == 41){
                 Char1name.text = "Cadet Smeg";
                 Char1speech.text = "";
                 Char2name.text = "";
