@@ -65,6 +65,8 @@ public class GameHandler : MonoBehaviour{
         public void StartGame(){
 			Time.timeScale = 1f;
                 SceneManager.LoadScene("Scene_1");
+				
+				GameHandler.hasGumball = false;
         }
 
         public void OpenCredits(){

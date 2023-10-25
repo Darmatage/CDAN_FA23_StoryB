@@ -23,7 +23,7 @@ public class Scene1aDialogue : MonoBehaviour {
         public GameObject NextScene3Button;
         public GameObject NextScene4Button;
         public GameObject nextButton;
-       //public AudioSource audioSource;
+       public AudioSource audioSource;
         private bool allowSpace = true;
 
 // initial visibility settings. Any new images or buttons need to also be SetActive(false);
@@ -55,6 +55,7 @@ public void Next(){
                 // AudioSource.Play();
         }
         else if (primeInt == 2){
+			audioSource.Play();
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "Cadet Smeg";
                 Char1speech.text = "Well that planet was interesting, where to next?";

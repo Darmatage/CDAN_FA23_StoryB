@@ -29,7 +29,7 @@ public class Scene1Dialogue : MonoBehaviour {
         public GameObject NextScene3Button;
         public GameObject NextScene4Button;
         public GameObject nextButton;
-       //public AudioSource audioSource;
+     public AudioSource audioSource;
         private bool allowSpace = true;
 
 // initial visibility settings. Any new images or buttons need to also be SetActive(false);
@@ -58,7 +58,7 @@ void Update(){         // use spacebar as Next button
 public void Next(){
         primeInt = primeInt + 1;
         if (primeInt == 1){
-                // AudioSource.Play();
+                // audioSource.Play();
         }
         else if (primeInt == 2){
                 ArtChar1a.SetActive(true);
@@ -172,6 +172,7 @@ public void Next(){
                 Char2speech.text = "";
         }
        else if (primeInt == 17){
+		   audioSource.Play();
                 Char1name.text = "";
                 Char1speech.text = "Select a planet to visit!";
                 Char2name.text = "";
