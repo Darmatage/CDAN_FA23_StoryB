@@ -106,7 +106,7 @@ public void Next(){
                 SceneManager.LoadScene("Scene_r2");
         }
         public void SceneChange3(){
-               SceneManager.LoadScene("Scene_2d");
+               SceneManager.LoadScene("Scene_5a");
         }
         public void SceneChange4(){
                 SceneManager.LoadScene("Scene_h2");
