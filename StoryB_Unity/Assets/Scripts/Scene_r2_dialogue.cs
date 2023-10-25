@@ -108,10 +108,10 @@ public void Next(){
        else if (primeInt == 8){
                 ArtChar1b.SetActive(false);
                 ArtChar1a.SetActive(true);
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Cadet Smeg";
-                Char2speech.text = "No life? That would make it very difficult to live here then. Do you have a captain I can talk to?";
+                Char1name.text = "Cadet Smeg";
+                Char1speech.text = "No life? That would make it very difficult to live here then. Do you have a captain I can talk to?";
+                Char2name.text = "";
+                Char2speech.text = "";
 		}
        else if (primeInt ==9){
                 Char1name.text = "";
