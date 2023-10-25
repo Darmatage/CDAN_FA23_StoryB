@@ -106,6 +106,8 @@ public void Next(){
                 Char2speech.text = "Target has been spotted.";
         }
 	   else if (primeInt == 21){
+		    ArtChar1a.SetActive(false);
+		   ArtChar1d.SetActive(true);
                 Char1name.text = "Cadet Smeg";
                 Char1speech.text = "Huh? Who was that?";
                 Char2name.text = "";
@@ -118,6 +120,8 @@ public void Next(){
                 Char2speech.text = "";
         }
        else if (primeInt == 23){
+		    ArtChar1d.SetActive(false);
+		   ArtChar1a.SetActive(true);
                 Char1name.text = "Cadet Smeg";
                 Char1speech.text = "Please we need–";
                 Char2name.text = "";
@@ -135,7 +139,7 @@ public void Next(){
 	    else if (primeInt == 25){
 		    ArtBG3.SetActive(false);
 		    ArtBG2.SetActive(true);
-			ArtChar1a.SetActive(true);
+		   ArtChar1c.SetActive(true);
                 Char1name.text = "Cadet Smeg";
                 Char1speech.text = "...";
                 Char2name.text = "";
@@ -149,6 +153,8 @@ public void Next(){
         }
 		else if (primeInt == 27){
                 Char1name.text = "Cadet Smeg";
+				ArtChar1c.SetActive(false);
+		   ArtChar1d.SetActive(true);
                 Char1speech.text = "Where am I? HELP!";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -250,12 +256,15 @@ public void Next(){
 		else if (primeInt == 52 ){
 			 ArtBG4.SetActive(false);
 		    ArtBG5.SetActive(true);
+			 ArtChar1d.SetActive(false);
+		   ArtChar1a.SetActive(true);
                 Char1name.text = "Cadet Smeg";
                 Char1speech.text = " It sure is dusty in here, gross! I don’t think anyone’s been here in centuries.";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
 		    else if (primeInt == 53 ){
+	
                 Char1name.text = "Cadet Smeg";
                 Char1speech.text = " What’s that over there? Is that...";
                 Char2name.text = "";
@@ -272,7 +281,6 @@ public void Next(){
                 Char1speech.text = "Maybe.. Just maybe.. We could stay here instead!";
                 Char2name.text = "";
                 Char2speech.text = "";
-
 				// Turn off "Next" button, turn on "Choice" buttons
                 nextButton.SetActive(false);
                 allowSpace = false;
@@ -283,26 +291,20 @@ public void Next(){
 		
 		//after choice 2a
        else if (primeInt == 60){
-                Char1name.text = "";
-                Char1speech.text = "";
+                Char1name.text = "Cadet Smeg";
+                Char1speech.text = "I bet we could all fit in here!";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
        else if (primeInt == 61){
-                Char1name.text = "";
-                Char1speech.text = "";
+                Char1name.text = "Cadet Smeg";
+                Char1speech.text = "It's perfect!";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
        else if (primeInt ==62){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-        }
-       else if (primeInt == 63){
-                Char1name.text = "";
-                Char1speech.text = "";
+                Char1name.text = "Cadet Smeg";
+                Char1speech.text = "I better call the captain!";
                 Char2name.text = "";
                 Char2speech.text = "";
 				//Go to next scene
@@ -313,26 +315,14 @@ public void Next(){
 		
 		//after choice 2b
        else if (primeInt == 70){
-                Char1name.text = "";
-                Char1speech.text = "";
+                Char1name.text = "Cadet Smeg";
+                Char1speech.text = "Yeah! Yeah, I better call the captain!";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
        else if (primeInt == 71){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-        }
-       else if (primeInt ==72){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-        }
-       else if (primeInt == 73){
-                Char1name.text = "";
-                Char1speech.text = "";
+                Char1name.text = "Cadet Smeg";
+                Char1speech.text = "We're getting our planet back!";
                 Char2name.text = "";
                 Char2speech.text = "";
 				//Go to next scene
@@ -359,6 +349,8 @@ public void Next(){
                 allowSpace = true;
         }
         public void Choice1bFunct(){
+			 ArtChar1a.SetActive(false);
+			 ArtChar1b.SetActive(true);
 			   Char1name.text = "Cadet Smeg";
                 Char1speech.text = "Off I go!";
                 Char2name.text = "";
@@ -372,7 +364,7 @@ public void Next(){
 		
 		public void Choice2aFunct(){
                 Char1name.text = "Cadet Smeg";
-                Char1speech.text = "";
+                Char1speech.text = "Yeah, that's a good idea!";
                 Char2name.text = "";
                 Char2speech.text = "";
                 primeInt = 59;
@@ -384,7 +376,7 @@ public void Next(){
 		public void Choice2bFunct(){
 	            allowSpace = true;
                 Char1name.text = "Cadet Smeg";
-                Char1speech.text = "";
+                Char1speech.text = "Or... we could use all this technology to fight back!";
                 Char2name.text = "";
                 Char2speech.text = "";
                 primeInt = 69;
