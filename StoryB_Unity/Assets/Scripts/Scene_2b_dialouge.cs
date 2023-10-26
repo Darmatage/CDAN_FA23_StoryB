@@ -230,7 +230,7 @@ public void Next(){
 			ArtChar2c.SetActive(false);
 		    ArtChar2b.SetActive(true);
                 Char1name.text = "Cadet Smeg";
-                Char1speech.text = "I Guess I can call the captain and tell him we can come here? Or maybe I should keep looking at other planets?";
+                Char1speech.text = "I Guess I can call the Captain and tell him we can come here? Or maybe I should keep looking at other planets?";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
@@ -281,7 +281,7 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Squishy Boots";
-                Char2speech.text = "The captain will be so pleased!";
+                Char2speech.text = "The Captain will be so pleased!";
 				//Go to next scene
 				nextButton.SetActive(false);
                 allowSpace = false;
@@ -321,8 +321,6 @@ public void Next(){
         }
 		
         public void Choice2aFunct(){
-			ArtChar1c.SetActive(false);
-		    ArtChar1a.SetActive(true);
                 Char1name.text = "Cadet Smeg";
                 Char1speech.text = "I better find more reinforcements. Thank you for your help squishy boots!";
                 Char2name.text = "";
@@ -336,7 +334,7 @@ public void Next(){
         public void Choice2bFunct(){
 			GameHandler.hasCalledCaptain = true;
                 Char1name.text = "Cadet Smeg";
-                Char1speech.text = "This place seems great! I will call my Captain. ";
+                Char1speech.text = "This place seems great! I will call my Captain.";
                 Char2name.text = "";
                 Char2speech.text = "";
                 primeInt = 59;
