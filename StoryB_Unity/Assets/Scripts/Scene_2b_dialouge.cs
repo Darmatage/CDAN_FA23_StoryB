@@ -299,7 +299,7 @@ public void Next(){
 			ArtChar1b.SetActive(false);
 		    ArtChar1a.SetActive(true);
                 Char1name.text = "Cadet Smeg";
-                Char1speech.text = "Oh yes, My home planet is being attacked by an evil alien empire! I’ve been sent to find sanctuary for our planet and our army, We need your planets help!";
+                Char1speech.text = "Oh yes, My home planet is being attacked by an evil alien empire! I’ve been sent to find sanctuary for our planet and our army!";
                 Char2name.text = "";
                 Char2speech.text = "";
                 primeInt = 19;

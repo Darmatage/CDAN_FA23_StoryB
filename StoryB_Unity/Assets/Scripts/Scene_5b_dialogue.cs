@@ -189,7 +189,7 @@ public void Next(){
         }
 			else if (primeInt == 10){
                 Char1name.text = "Cadet Smeg";
-                Char1speech.text = "Smeg: We’ve done it! We are going to- wait, whats that alarm sound?";
+                Char1speech.text = "We’ve done it! We are going to- wait, whats that alarm sound?";
                 Char2name.text = "";
                 Char2speech.text = "";
 				Char3name.text = "";
