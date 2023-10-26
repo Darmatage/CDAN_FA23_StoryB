@@ -109,7 +109,7 @@ public void Next(){
                 ArtChar1b.SetActive(false);
                 ArtChar1a.SetActive(true);
                 Char1name.text = "Cadet Smeg";
-                Char1speech.text = "No life? That would make it very difficult to live here then. Do you have a captain I can talk to?";
+                Char1speech.text = "No life? That would make it very difficult to live here then. Do you have a Captain I can talk to?";
                 Char2name.text = "";
                 Char2speech.text = "";
 		}

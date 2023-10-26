@@ -68,12 +68,20 @@ public void Next(){
         }
        else if (primeInt ==3){
                 Char1name.text = "Cadet Smeg";
-                Char1speech.text = "Hello Robot 1, I am Cadet Smeg, I am here because I require assistance. My home planet has been invaded by evil aliens, and my kind is looking for a new planet to call home.";
+                Char1speech.text = "Hello Robot 1, I am Cadet Smeg, I am here because I require assistance. ";
                 Char2name.text = "";
                 Char2speech.text = "";
                 //gameHandler.AddPlayerStat(1);
+				
+				        }
+       else if (primeInt ==4){
+                Char1name.text = "Cadet Smeg";
+                Char1speech.text = "My home planet has been invaded by evil aliens, and my kind is looking for a new planet to call home.";
+                Char2name.text = "";
+                Char2speech.text = "";
+				
         }
-       else if (primeInt == 4){
+       else if (primeInt == 5){
                 ArtChar1b.SetActive(false);
                 ArtChar1a.SetActive(true);
                 Char1name.text = "Cadet Smeg";
@@ -81,19 +89,19 @@ public void Next(){
                 Char2name.text = "";
                 Char2speech.text = "";
         }
-       else if (primeInt == 5){
+       else if (primeInt == 6){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "ROBOT 1";
 				StartCoroutine(TypeText(Char2speech, "WHY RUN? YOU CAN TAKE BACK YOUR PLANET WITH OUR HELP."));
         }
-       else if (primeInt == 6){
+       else if (primeInt == 7){
                 Char1name.text = "Cadet Smeg";
                 Char1speech.text = "Um, I dont know if we are powerful enough, even together…";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
-       else if (primeInt ==7){
+       else if (primeInt ==8){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "ROBOT 1";

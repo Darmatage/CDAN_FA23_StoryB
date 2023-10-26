@@ -70,7 +70,7 @@ public void Next(){
                 ArtChar1a.SetActive(true);
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "Cadet Smeg";
-                Char1speech.text = "Uh uh oh man, the captain sent me out of all the cadets to save our people!! Why did he send me?";
+                Char1speech.text = "Uh uh oh man. The Captain sent me, out of all the cadets to save our people!! Why did he send me?";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
@@ -85,7 +85,7 @@ public void Next(){
 		        ArtChar1a.SetActive(false);
 				ArtChar1c.SetActive(true);
                 Char1name.text = "Cadet Smeg";
-                Char1speech.text = "Uh uh the captain is calling! I better pick it up!";
+                Char1speech.text = "Uh uh the Captain is calling! I better pick it up!";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
@@ -100,7 +100,7 @@ public void Next(){
 		        ArtChar1a.SetActive(true);
 				ArtChar1c.SetActive(false);
                 Char1name.text = "Cadet Smeg";
-                Char1speech.text = "I’m here captain!";
+                Char1speech.text = "I’m here Captain!";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
@@ -130,7 +130,7 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Captain";
-                Char2speech.text = "Your mission is to find us assistance to defeat the evil aliens. Or find a habitable planet to move our people too to escape the evil aliens.";
+                Char2speech.text = "Your mission is to find us assistance to defeat the evil aliens, or find a habitable planet to move our people to in order to escape the evil aliens.";
         }
 		 else if (primeInt == 11){
                 Char1name.text = "";
@@ -150,7 +150,7 @@ public void Next(){
 			 ArtChar1a.SetActive(true);
 				ArtChar1c.SetActive(false);
                 Char1name.text = "Cadet Smeg";
-                Char1speech.text = "Uh uh..you got it captain I won’t let you down";
+                Char1speech.text = "Uh uh..you got it Captain I won’t let you down";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
@@ -173,7 +173,7 @@ public void Next(){
 			 			 ArtChar1a.SetActive(true);
 				ArtChar1b.SetActive(false);
                 Char1name.text = "Cadet Smeg";
-                Char1speech.text = "Looks like there’s no time to waste, the captain is counting on me!";
+                Char1speech.text = "Looks like there’s no time to waste, the Captain is counting on me!";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
