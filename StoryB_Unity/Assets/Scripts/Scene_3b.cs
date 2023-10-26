@@ -67,7 +67,7 @@ public void Next(){
                 ArtChar1a.SetActive(true);
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "Cadet Smeg";
-                Char1speech.text = "Come in captain! I have found a suitable planet.";
+                Char1speech.text = "Come in Captain! I have found a suitable planet.";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
@@ -128,7 +128,7 @@ public void Next(){
        else if (primeInt == 20){
                 //gameHandler.AddPlayerStat(1);
                 Char1name.text = "Cadet Smeg";
-                Char1speech.text = "You send our forces to this planet and I’ll find more help!";
+                Char1speech.text = "You send our forces to this planet, and I’ll find more help!";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
