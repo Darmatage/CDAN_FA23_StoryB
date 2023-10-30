@@ -256,8 +256,6 @@ public void Next(){
 		else if (primeInt == 52 ){
 			 ArtBG4.SetActive(false);
 		    ArtBG5.SetActive(true);
-			 ArtChar1d.SetActive(false);
-		   ArtChar1a.SetActive(true);
                 Char1name.text = "Cadet Smeg";
                 Char1speech.text = " It sure is dusty in here, gross! I don’t think anyone’s been here in centuries.";
                 Char2name.text = "";
